@@ -115,6 +115,13 @@ namespace newProject
             Console.WriteLine("세번째 위치");
 
             Product product = new Product("과자", 1500);
+
+            Box box = new Box(10, 20);
+            box.setWidth(200);
+            box.setHeigth(200);
+            Console.WriteLine(box.getArea());
+            box.setWidth(-100);
+            Console.WriteLine(box.getArea());
         }
     }
 }
