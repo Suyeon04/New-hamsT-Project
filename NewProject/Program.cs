@@ -131,6 +131,10 @@ namespace newProject
             //Console.WriteLine(Fibonacci.Get(10));
             //Console.WriteLine(Fibonacci.Get(30));
             Console.WriteLine(Fibonacci.Get(1000));
+
+
+            Cat c = new Cat();
+            Dog d = new Dog();
         }
     }
 }

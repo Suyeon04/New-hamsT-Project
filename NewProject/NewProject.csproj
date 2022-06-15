@@ -43,9 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal.cs" />
+    <Compile Include="Animal2.cs" />
     <Compile Include="Box.cs" />
     <Compile Include="car.cs" />
+    <Compile Include="Cat.cs" />
     <Compile Include="DataTime.cs" />
+    <Compile Include="Dog.cs" />
+    <Compile Include="Fibonacci.cs" />
     <Compile Include="myMath.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
