@@ -135,6 +135,40 @@ namespace newProject
 
             Cat c = new Cat();
             Dog d = new Dog();
+
+
+            List<Cat> Cats = new List<Cat>() { new Cat(), new Cat(), new Cat()};
+            List<Dog> Dogs = new List<Dog>() { new Dog(), new Dog(), new Dog() };
+            List<Animal> Animals = new List<Animal>() {
+                new Cat(), new Cat(), new Cat(),
+                new Dog(), new Dog(), new Dog()
+            };
+
+            foreach (var item in Dogs)
+            {
+                item.eat();
+                item.Sleep();
+                item.Bark();
+            }
+            foreach (var item in Cats)
+            {
+                item.eat();
+                item.Sleep();
+            }
+            foreach(var item in Animals)
+            {
+                item.eat();
+                item.Sleep();
+                if(item is Dog)
+                {
+                    ((Dog)item).Bark();
+                }
+                var dog = item as Dog;
+                if(dog != null) { dog.Bark(); }
+                var cat = item as Cat;
+                if (cat != null) { cat.Meow(); }
+
+            }
         }
     }
 }
