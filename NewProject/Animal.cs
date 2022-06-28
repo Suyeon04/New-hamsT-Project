@@ -9,7 +9,7 @@ namespace newProject
         {
             Age = 0;
         }
-        public void eat()
+        public virtual void eat()
         {
             Console.WriteLine("냠냠");
         }

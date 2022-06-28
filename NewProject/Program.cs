@@ -8,6 +8,7 @@ namespace newProject
 {
     internal class Program
     {
+        public static int number = 10;
         static void Main(string[] args)
         {
             car car = new car();
@@ -129,8 +130,8 @@ namespace newProject
 
             //Console.WriteLine(Fibonacci.Get(1));
             //Console.WriteLine(Fibonacci.Get(10));
-            //Console.WriteLine(Fibonacci.Get(30));
-            Console.WriteLine(Fibonacci.Get(1000));
+            Console.WriteLine(Fibonacci.Get(30));
+            //Console.WriteLine(Fibonacci.Get(1000));
 
 
             Cat c = new Cat();
@@ -144,17 +145,6 @@ namespace newProject
                 new Dog(), new Dog(), new Dog()
             };
 
-            foreach (var item in Dogs)
-            {
-                item.eat();
-                item.Sleep();
-                item.Bark();
-            }
-            foreach (var item in Cats)
-            {
-                item.eat();
-                item.Sleep();
-            }
             foreach(var item in Animals)
             {
                 item.eat();
@@ -171,6 +161,16 @@ namespace newProject
             }
             Child ChildA = new Child();
             Child ChildB = new Child("string");
+
+
+            //shadowing
+            int number = 20;
+            Console.WriteLine(number);
+
+            foreach (var item in Animals)
+            {
+                item.eat();
+            }
         }
     }
 }
